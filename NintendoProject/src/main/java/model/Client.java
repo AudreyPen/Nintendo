@@ -1,14 +1,18 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Client {
 
 	private String nom;
 	private String prenom;
+	private List<Jeu> listeAchat = new ArrayList();
 	
-	public Client(String nom, String prenom) {
-		super();
+	public Client(String nom, String prenom,List listeAchat) {
 		this.nom = nom;
 		this.prenom = prenom;
+		this.listeAchat = listeAchat;
 	}
 
 	public String getNom() {
